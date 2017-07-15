@@ -1,0 +1,89 @@
+<div class="container-fluid">
+	<div class="row row-box">
+		<div class="col-md-2">
+			<a class="btn btn-danger btn-sm text-center mt5"><span class="glyphicon glyphicon-trash pr10"></span>批量删除</a>
+		</div>
+		<div class="col-md-10">
+			<p class="text-center pull-right p10">共有有数据：<span class="dataNum">100</span>条</p>
+		</div>
+	</div>
+</div>
+<div class="container-fluid">
+	<div class="form-group sec">
+		<label for="search">数据检索:</label><input type="text" id="search" class="form-control" />
+	</div>
+</div>
+<table class="table table-bordered" ng-controller="tableEditDelCon">
+	  <tbody>
+	  	  <thead>
+		   <tr class="row bg-primary">
+		     <th class="col-md-1 text-center"><input type="checkbox" class="col-center-block" /></th>
+		     <th class="col-md-1 text-center">ID</th>
+		     <th class="col-md-2 text-center">LOGO</th>
+		     <th class="col-md-2 text-center">名称</th>
+		     <th class="col-md-5 text-center">具体信息</th>
+		     <th class="col-md-1 text-center">操作</th>
+		   </tr>
+		  </thead>
+			<tr class="row">
+		     <td class="col-md-1 text-center"><input type="checkbox" class="col-center-block" /></td>
+		     <td class="col-md-1 text-center">1</td>
+		     <td class="col-md-2 text-center">
+		     	<span class="logoImg">
+		     		<img src='../dist/image/proImgs/dongpeng.jpeg' alt="" />
+		     	</span>
+		     </td>
+		     <td class="col-md-2 text-center">东鹏特饮</td>
+		     <td class="col-md-5 text-left">
+		     	东鹏特饮好喝还不上火，一天两瓶吃嘛嘛香，一口气上五楼，晚上继续嘿嘿嘿...
+		     </td>
+		     <td class="col-md-1 text-center doSome">
+		     	<span class="glyphicon glyphicon-pencil" ng-click="editFn()"></span>
+		     	<span class="glyphicon glyphicon-trash" ng-click="delFn()"></span>
+		     </td>
+		    </tr>
+		    <tr class="row">
+		     <td class="col-md-1 text-center"><input type="checkbox" class="col-center-block" /></td>
+		     <td class="col-md-1 text-center">1</td>
+		     <td class="col-md-2 text-center">
+		     	<span class="logoImg">
+		     		<img src='../dist/image/proImgs/dongpeng.jpeg' alt="" />
+		     	</span>
+		     </td>
+		     <td class="col-md-2 text-center">东鹏特饮</td>
+		     <td class="col-md-5 text-left">
+		     	东鹏特饮好喝还不上火，一天两瓶吃嘛嘛香，一口气上五楼，晚上继续嘿嘿嘿...
+		     </td>
+		     <td class="col-md-1 text-center doSome">
+		     	<span class="glyphicon glyphicon-pencil" ng-click="editFn()"></span>
+		     	<span class="glyphicon glyphicon-trash" ng-click="delFn()"></span>
+		     </td>
+		    </tr>
+		    <tr class="row">
+		     <td class="col-md-1 text-center"><input type="checkbox" class="col-center-block" /></td>
+		     <td class="col-md-1 text-center">1</td>
+		     <td class="col-md-2 text-center">
+		     	<span class="logoImg">
+		     		<img src='../dist/image/proImgs/dongpeng.jpeg' alt="" />
+		     	</span>
+		     </td>
+		     <td class="col-md-2 text-center">东鹏特饮</td>
+		     <td class="col-md-5 text-left">
+		     	东鹏特饮好喝还不上火，一天两瓶吃嘛嘛香，一口气上五楼，晚上继续嘿嘿嘿...
+		     </td>
+		     <td class="col-md-1 text-center doSome">
+		     	<span class="glyphicon glyphicon-pencil" ng-click="editFn()"></span>
+		     	<span class="glyphicon glyphicon-trash" ng-click="delFn()"></span>
+		     </td>
+		    </tr>
+	  </tbody>
+</table>
+
+<div ng-include="'_page/pro_edit.html'"></div>
+<div ng-include="'_page/del_alert.html'"></div>
+ <ul class="w pages">
+	<span class="lastPage f12">上一页</span>
+	<li>1</li>
+	<span class="nextPage f12">下一页</span>
+</ul>
+

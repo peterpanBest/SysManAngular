@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html ng-app="indexApp">
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>
+		<link rel="stylesheet" type="text/css" href="../src/style/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../src/style/index.css"/>
+		<link rel="stylesheet" type="text/css" href="../dist/lib/style/bootstrap.min.css"/>
+	</head>
+	<body ng-class="{false:'',true:'bgbox'}[bgBox]">
+		<div class="header w clearfix">
+			<div class="header-title">PeterUI</div>
+			<ul class="header-right clearfix">
+				<li class="authority">超级管理员</li>
+				<li class="username"><span>admin</span><span class="glyphicon glyphicon-menu-down ll"></span></li>
+				<li class="mess"><span class="glyphicon glyphicon-envelope"></span></li>
+				<li class="sys-style"><span class="glyphicon glyphicon-heart-empty"></span></li>
+			</ul>
+		</div>
+		<div class="main clearfix">
+			<div class="main-left clearfix" ng-class="{true:'triangleInside',false:'triangleOut'}[mainLeft]">
+				<ul class="main-left-ul w clearfix" ng-controller="mainListCon">
+					<li>
+						<a ng-click="mainUlClickA($event)"><span class="glyphicon glyphicon-list-alt qq"></span>产品管理<span ng-class="{false:'glyphicon glyphicon-list-alt',true:'glyphicon glyphicon-menu-up'}[proMan]" class="glyphicon glyphicon-menu-down pp"></span></a>
+						<ul class="listA" ng-repeat="item in mainLeftUlA" ng-show="listA">
+							<li ng-click="getUrl($event)">{{item}}</li>
+						</ul>
+					</li>
+					<li>
+						<a ng-click="mainUlClickB($event)"><span class="glyphicon glyphicon-picture qq"></span>图片管理<span ng-class="{false:'glyphicon glyphicon-list-alt',true:'glyphicon glyphicon-menu-up'}[proImg]" class="glyphicon glyphicon-menu-down pp"></span></a>
+						<ul class="listA" ng-repeat="item in mainLeftUlB" ng-show="listB">
+							<li ng-click="getUrl($event)">{{item}}</li>
+						</ul>
+					</li>
+					<li>
+						<a ng-click="mainUlClickC($event)"><span class="glyphicon glyphicon-signal qq"></span>数据管理<span ng-class="{false:'glyphicon glyphicon-list-alt',true:'glyphicon glyphicon-menu-up'}[proData]" class="glyphicon glyphicon-menu-down pp"></span></a>
+						<ul class="listA" ng-repeat="item in mainLeftUlC" ng-show="listC">
+							<li ng-click="getUrl($event)">{{item}}</li>
+						</ul>
+					</li>
+					<li>
+						<a><span class="glyphicon glyphicon-edit qq"></span>评论管理<span class="glyphicon glyphicon-menu-down pp"></span></a>
+					</li>
+					<li>
+						<a><span class="glyphicon glyphicon-user qq"></span>用户管理<span class="glyphicon glyphicon-menu-down pp"></span></a>
+					</li>
+					<li>
+						<a><span class="glyphicon glyphicon-cog qq"></span>系统管理<span class="glyphicon glyphicon-menu-down pp"></span></a>
+					</li>
+				</ul>
+			</div>
+			<div class="main-right clearfix" ng-controller="triangleCon" ng-class="{true:'mainRightInside',false:'mainRightOut'}[mainRight]">
+				<div class="hideUl" ng-click="triangle()"><span></span></div>
+				<ul class="main-top-list" ng-controller="mainRightListCon">
+					<li ng-repeat="item in topList">{{item}}</li>
+				</ul>
+				<div class="ngViewBox clearfix">
+					<div ng-view></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="../dist/lib/script/angular-1.5.7.js" type="text/javascript" charset="utf-8"></script>
+<script src="../dist/lib/script/angular-route.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../src/script/modules/index.js" type="text/javascript" charset="utf-8"></script>
+<script src="../src/script/modules/controllers.js" type="text/javascript" charset="utf-8"></script>

@@ -1,0 +1,87 @@
+.header{
+	background: #3399FF;
+	height: 80px;
+	position: relative;
+	top: 0;
+	z-index: 400;
+}
+.main{
+	background-color: #66CCFF;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.main .main-box {
+	width: 490px;
+	border: 1px solid #FFFFFF;
+	position: relative;
+	top: 25%;
+	left: 50%;
+	margin-left: -250px;
+	overflow: hidden;
+	background: #FFFFFF;
+	border-radius: 10px;
+	padding: 0 10px;
+}
+.main .main-box form.form-box{
+	width: 520px;
+	margin: 40px auto;
+	background: #FFFFFF;
+}
+.main .main-box form.form-box .vercode-box{
+	margin-left: 100px;
+}
+.main .main-box form.form-box .vercode-box label{
+	text-align: left;
+}
+.main .main-box form.form-box .vercode-code{
+	text-align: center;
+	height: 35px;
+	line-height: 35px;
+	background: seashell;
+}
+.main .main-box form.form-box .vercode{
+	width: 90px;
+	height: 35px;
+	background: silver;
+}
+.main .main-box form.form-box label.labtxt{
+	font-size: 10px;
+	padding: 5px 0;
+}
+
+.main .main-box form.form-box input.form-control{
+	width: 350px;
+}
+
+
+.main .main-box form.form-box span.user-Verif{
+	width: 250px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: red;
+	position: relative;
+	right: -100px;
+	top: 0;
+	z-index: 500;
+}
+.main .main-box form.form-box span.pass-Verif{
+	width: 250px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: red;
+	position: relative;
+	right: -100px;
+	top: 0;
+	z-index: 500;
+}
+
+.user-inp{
+	border: 1px solid red!important;
+}
+

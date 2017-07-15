@@ -1,0 +1,360 @@
+.header{
+	background: #66CCFF;
+}
+.header .header-title{
+	width: 20%;
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	padding-left: 30px;
+}
+.header ul.header-right{
+	width: 20%;
+	float: right;
+	height: auto;
+	overflow: hidden;
+}
+.header ul.header-right li{
+	line-height: 40px;
+	padding: 0 10px;
+	float: left;
+	cursor: pointer;
+	cursor: hand;
+}
+.header ul.header-right li.username span.ll{
+	padding: 0 5px;
+}
+/***************************************************************************************************/
+.main{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 50px;
+	bottom: 0;
+	background: snow;
+}
+.main .main-left{
+	width: 15%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: #CCFFFF;
+	overflow: hidden;
+}
+
+.main .main-right{
+	width: 85%;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: snow;
+}
+
+.main .main-left ul.main-left-ul{
+	
+}
+.main ul.main-left-ul li{
+	width: 100%;
+	border-bottom: 1px solid silver;
+	border-right: 1px solid silver;
+}
+.main ul.main-left-ul li a{
+	display: block;
+	width: 100x;
+	text-align: center;
+	cursor: pointer;
+	cursor: hand;
+}
+.main ul.main-left-ul li  a span.pp{
+	padding: 15px 0;
+	margin-left: 30px;
+}
+.main ul.main-left-ul li  a span.qq{
+	padding: 15px 0;
+	padding-right: 10px;
+}
+
+.main ul.main-left-ul ul.listA{
+	position: relative;
+	left: 0;
+}
+.main ul.main-left-ul ul.listA li{
+	position: relative;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	padding: 10px 0;
+	border: none;
+	cursor: pointer;
+	cursor: hand;
+}
+.main ul.main-left-ul ul.listA li:hover{
+	background: snow;
+}
+.main-right .hideUl{
+	position: absolute;
+	top: 45%;
+	left: 0px;
+	z-index: 400;
+	  height:70px;
+	  border-top: 10px solid transparent;
+	  border-right:10px solid transparent;
+	  border-bottom:10px solid transparent;
+	  border-left:20px solid #CCFFFF;
+}
+.main-right .hideUl:hover{
+	 border-left:20px solid #660000;
+	 cursor: pointer;
+	 cursor: hand;
+}
+.main-right .hideUl span{
+	position: absolute;
+	top: 50%;
+	margin-top: -10px;
+	left: -15px;
+	display: block;
+  	height:0px;
+  	width:0px;
+  	border-right:solid 10px silver;
+  	border-top:solid 10px rgba(0,0,0,0); 
+  	border-bottom:solid 10px rgba(0,0,0,0); 
+}
+
+.triangleInside{
+	width: 0!important;
+	transition: all .15s ease-in-out .2s!important;
+}
+.triangleOut{
+	width: 15%!important;
+	transition: all .15s ease-in-out .2s!important;
+}
+.mainRightInside{
+	width: 100%!important;
+	transition: all .15s ease-in-out .2s!important;
+}
+.mainRightOut{
+	width: 85%!important;
+	transition: all .15s ease-in-out .2s!important;
+}
+.main ul.main-top-list{
+	width: 100%;
+	height: 35px;
+	background: silver;
+	overflow: hidden;
+}
+.main ul.main-top-list li{
+	float: left;
+	font-size: 10px;
+	width: 70px;
+	height: 30px;
+	line-height: 30px;cmd
+	border: 1px solid slategrey;
+	border-bottom: 0;
+	border-radius: 5px;
+	text-align: center;
+	margin: 0 10px;
+	margin-top: 8px;
+	cursor: pointer;
+	cursor: hand;
+}
+/*******************************index-main**************************************/
+.main .main-right .ngViewBox{
+	position: absolute;
+	left: 1.5%;
+	top: 35px;
+	height: 100%;
+	width: 97%;
+	margin: 0 auto;
+	/*border-left: 1px solid silver;
+	border-right: 1px solid silver;*/
+	margin-top: 0;
+	padding-top: 0;
+}
+/*******************************proMan**************************************/
+.main .main-right .row-box{
+	height: 40px;
+	background: #CCFFFF;
+	border: 1px solid silver;
+	border-top: none;
+}
+.main .main-right .row-box .dataNum{
+	font-weight: 600;
+}
+.main .main-right .table-bordered>thead>tr>th {
+    border-bottom-width: 0;
+}
+.main .main-right .table-bordered .logoImg{
+	width: 180px;
+	height: 60px;
+	margin: 10px auto;
+}
+.main .main-right .table-bordered td {vertical-align: middle !important;}
+.main .main-right .table-bordered td.doSome span{
+	cursor: pointer;
+	cursor: hand;
+	margin: 0 5px;
+}
+.main .main-right .table-bordered td.doSome span:hover{
+	color: deepskyblue;
+}
+.main ul.pages{
+	width: auto;
+	height: auto;
+	overflow: hidden;
+	float: right;
+}
+.main ul.pages span{
+	display: block;
+	width: 60px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border: 1px solid steelblue;
+	float: left;
+}
+.main ul.pages li{
+	width: 40px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border: 1px solid steelblue;
+	float: left;
+	font-size: 12px;
+	font-weight: 600;
+	margin: 0 10px;
+}
+.main ul.pages li:hover{
+	color: snow;
+	background: steelblue;
+	border: 1px solid slategray;
+	cursor: pointer;
+	cursor: hand;
+}
+.main ul.pages span:hover{
+	color: snow;
+	background: steelblue;
+	border: 1px solid slategray;
+	cursor: pointer;
+	cursor: hand;
+}
+.main .sec{
+	float: right;
+	width: 360px;
+	margin: 5px 0;
+	overflow: hidden;
+}
+.main .sec label{
+	width: 100px;
+	float: left;
+	padding: 8px 0;
+}
+.main .sec input {
+	width: 250px;
+	float: left;
+}
+/*******************************遮罩层**************************************/
+.bgbox{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: rgba(0,0,0,.6)!important;
+	z-index: 600;
+}
+/*******************************pro 编辑**************************************/
+.main form.edit-box{
+	width: 800px;
+	height: 400px;
+	background: snow;
+	border-radius: 10px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -300px;
+	margin-left: -400px;
+	z-index: 900;
+	border: 1px solid silver;
+	overflow: hidden;
+}
+.main form.edit-box .clos{
+	width: 100%;
+	height: 30px;
+	border-bottom: 1px solid silver;
+}
+.main form.edit-box .clos p{
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	padding-left: 25px;
+	float: left;
+}
+.main form.edit-box .clos span{
+	display: block;
+	height: 30px;
+	width: 30px;
+	padding-top:10px;
+	cursor: pointer;
+	cursor: hand;
+}
+.main form.edit-box  input{
+	width: 300px;
+}
+.main form.edit-box label{
+	text-align: center;
+}
+.main form.edit-box .ebox{
+	width: 700px;
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+.main form.del-box{
+	width: 500px;
+	height: 300px;
+	background: snow;
+	border-radius: 10px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -300px;
+	margin-left: -400px;
+	z-index: 900;
+	border: 1px solid silver;
+	overflow: hidden;
+}
+.main form.del-box .clos{
+	width: 100%;
+	height: 30px;
+	border-bottom: 1px solid silver;
+}
+.main form.del-box .clos p{
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	padding-left: 25px;
+	float: left;
+}
+.main form.del-box .clos span{
+	display: block;
+	height: 30px;
+	width: 30px;
+	padding-top:10px;
+	cursor: pointer;
+	cursor: hand;
+}
+
