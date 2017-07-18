@@ -1,16 +1,27 @@
 <div class="container-fluid">
-	<div class="row row-box">
-		<div class="col-md-2">
-			<a class="btn btn-danger btn-sm text-center mt5"><span class="glyphicon glyphicon-trash pr10"></span>批量删除</a>
-		</div>
-		<div class="col-md-10">
-			<p class="text-center pull-right p10">共有有数据：<span class="dataNum">100</span>条</p>
-		</div>
-	</div>
+	<div class="row">
+            <div class="well">
+               <form class="form-horizontal">
+                 <fieldset>
+                  <div class="control-group">
+                    <div class="controls">
+                     <div class="input-prepend input-group">
+                       <span class="add-on input-group-addon"><i class="glyphicon glyphicon-calendar fa fa-calendar"></i></span><input type="text" readonly style="width: 200px" name="reservation" id="reservation" class="form-control" value="2014-5-21 - 2014-6-21" /> 
+                     </div>
+                    </div>
+                  </div>
+                 </fieldset>
+               </form>
+
+               <script type="text/javascript">
+               $(document).ready(function() {
+                  $('#reservation').daterangepicker(null, function(start, end, label) {
+                    console.log(start.toISOString(), end.toISOString(), label);
+                  });
+               });
+               </script>
+            </div>
 </div>
-<div class="container-fluid">
-	<div class="form-group sec">
-		<label for="search">数据检索:</label><input type="text" id="search" class="form-control" />
 	</div>
 </div>
 <table class="table table-bordered" ng-controller="tableEditDelCon">
@@ -78,8 +89,6 @@
 		    </tr>
 	  </tbody>
 </table>
-
-<div ng-include="'_page/del_alert.html'">
 
  <ul class="w pages">
 	<span class="lastPage f12">上一页</span>
