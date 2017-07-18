@@ -4,13 +4,13 @@ var app = angular.module("indexApp", ["ngRoute"]);
 		$routeProvider.when("/main",{
 			templateUrl: './index-main.html',
     		controller: 'indexMainCon'
-		}).when("/0",{
+		}).when("/A0",{
 			templateUrl: './index-proMan.html',
     		controller: 'proManCon'
-		}).when("/1",{
+		}).when("/A1",{
 			templateUrl: './index-proTypeMan.html',
     		controller: ''
-		}).when("/2",{
+		}).when("/A2",{
 			templateUrl: './index-proTypeMan.html',
     		controller: ''
 		});
@@ -22,6 +22,7 @@ var app = angular.module("indexApp", ["ngRoute"]);
 		$rootScope.pageTo=function(hash){
 			$rootScope.hash=hash;
 			$location.path(hash);
+			console.log(hash);
 		}
 		$rootScope.pageTo("main");
 	});

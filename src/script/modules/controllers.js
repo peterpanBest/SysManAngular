@@ -46,8 +46,10 @@ app.controller("mainListCon", function($scope, $rootScope){
 		$scope.getUrl = function(e){
 			$scope.ulChildrenText = e.target.innerHTML;
 			$scope.toPage = $scope.searchTextIndex($scope.ulChildrenText, $scope.arr);
-			console.log($scope.toPage);
-			$rootScope.pageTo($scope.toPage);
+			
+			//父项标签加上子项序号，用这个方式，来判断路由
+			console.log($scope.btn+$scope.toPage);
+			$rootScope.pageTo($scope.btn+$scope.toPage);
 		}
 		
 		/*
